@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>My Cool Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow"/>
     <style>
       body {
         font-family:'Courier New';
@@ -16,6 +18,23 @@
         background-color: #ccc
       }
 
+      nav{
+		    	text-align:center; /* centers the nav */
+		    }
+		
+      nav ul {
+          list-style:none; /* removes the bullets */
+        }
+      nav ul li
+        {
+          display:inline-block; /* makes horizontal, but able to declare margins */
+          margin:0 2%; /* margin left-right, gets smaller as necessary */
+        }
+      nav a:hover{
+        text-decoration: none;
+        }	
+      
+
       footer {
         text-align:center;
         clear:both;
@@ -23,7 +42,20 @@
     </style>
   </head>
   <body>
+  <header>
     <h1>My Cool Website</h1>
+    <!--nav goes here-->
+    <nav>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+				<li><a href="#">Link 6</a></li>
+			</ul>
+		</nav>
+  </header>
     <p>Clever Content Goes Here. If I had more to say, I would say it. No, I mean it, I really have nothing. Come back later and I'll put something here. Here is how to use the <strong>strong</strong> tag. Here is how to use the <em>emphasis</em> tag. Here is how to use the <strike>strikethrough</strike> tag.</p>
     <p>Clever Content Goes Here</p>
     <p>Clever Content Goes Here</p>
